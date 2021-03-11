@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "QuickSearch",
+    "version": "1.5.0",
+    "description": "QuickSearch™ including Context-Menu-Search by the HuhnCompany.",
+    "options_page": "html/options.html",
+    "icons": {
+        "128": "img/128.png",
+        "48": "img/48.png",
+        "16": "img/16.png"
+    },
+    "browser_action":{
+        "default_icon": "img/16.png",
+        "default_popup": "html/popup.html"
+    },
+    "background":{
+        "scripts": [
+            "res/contextMenu.js"
+        ],
+        "persistent": false
+    },
+    "permissions":[
+        "contextMenus",
+        "storage",
+        "notifications"
+    ]
+
+}
